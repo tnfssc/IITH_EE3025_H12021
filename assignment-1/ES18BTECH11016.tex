@@ -1,0 +1,226 @@
+\documentclass[journal,12pt]{IEEEtran}
+\usepackage{textcomp}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+  \usepackage{color}
+  \usepackage{array}
+  \usepackage{longtable}
+  \usepackage{calc}
+  \usepackage{multirow}
+  \usepackage{hhline}
+  \usepackage{ifthen}
+  \usepackage{lscape}
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}
+
+\lstset{
+frame=single,
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+    \newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\raggedbottom
+\setlength{\parindent}{0pt}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{EE3025 Task-1}
+\author{Sharath Chandra - ES18BTECH11016}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all codes from here
+\begin{lstlisting}
+https://github.com/tnfssc/IITH_EE3025_H12021/tree/main/assignment-1
+\end{lstlisting}
+And TeX codes from -
+\begin{lstlisting}
+https://github.com/tnfssc/IITH_EE3025_H12021/tree/main/assignment-1
+\end{lstlisting}
+
+\section{\textbf{Problem}}
+
+Modify the following code given in problem 2.3 with different input parameters to get the best possible output.
+\begin{lstlisting}
+import soundfile as sf
+from scipy import signal
+
+#read .wav file
+input_signal,fs = sf.read('Sound_Noise.wav')
+
+#sampling frequency of Input signal
+sampl_freq=fs
+
+#order of the filter
+order = 3
+
+#cutoff frequency 4kHz
+cutoff_freq=4000.0
+
+#digital frequency
+Wn=2*cutoff_freq/sampl_freq
+
+# b and a are numerator and denominator polynomials respectively
+b, a = signal.butter(order,Wn,'low')
+
+#filter the input signal with butterworth filter
+output_signal = signal.filtfilt(b, a, input_signal)
+#output_signal = signal.lfilter(b, a, input_signal)
+
+#write the output signal into .wav file
+sf.write('Sound_With_ReducedNoise.wav', output_signal, fs)
+
+\end{lstlisting}
+
+\section{\textbf{Solution}}
+The parameters that can be modified here are:
+\begin{description}[font=$\bullet$\scshape\bfseries]
+  \item[]{Order of the filter}
+  \item[]{Cutoff frequency}
+  \item[]{Cascade filtering}
+\end{description}
+
+\subsection{\textbf{Cutoff frequency}}
+To get a good cutoff frequency, we can observe the spectrogram from Problem 2.2. Here, the synthesizer key note frequencies are between 440Hz and 5.1KHz. So, let the midpoint be the cutoff frequency i.e, (440Hz + 5100Hz)/2 = 2770Hz.
+
+\subsection{\textbf{Order}}
+The main disadvantage of the Butterworth filter is that it achieves the pass band flatness at the expense of a wide transition band as the filter changes from the pass band to the stop band.
+We could fix it by increasing the order. However, such high orders can produce miniscule values hard to work with while simulating. So, let the order be 4.
+
+\subsection{\textbf{Cascade filtering}}
+Since the order is just 4 now, there will be a lot of noise even after filtering. This is because the transition region is too wide. To make the transition steeper, we could increase order, but we can't. So, we can cascade the filter to get the values after the cutoff frequency closer to zero. The more we cascade, the steeper the transition region.
+
+\section{\textbf{Results}}
+To get a better quantitative idea about how much noise was filtered, we can calculate the integral of the output signal and see the difference between filtered noises.
+
+\begin{center}
+  \begin{tabular}{ |c|c|c| }
+
+    \hline
+                       & \textbf{gvv-filter} & \textbf{my-filter} \\
+    \hline
+    Cutoff             & 4000 Hz             & 2770 Hz            \\
+    \hline
+    Order              & 3                   & 4 (cascaded        \\
+                       &                     & 20 times)          \\
+    \hline
+    Integral           & $1.67*10^7$         & $1.48*10^7$        \\
+    0 to cutoff        &                     &                    \\
+    \hline
+    Integral           & $2.2*10^5$          & $1.33*10^5$        \\
+    cutoff+            &                     &                    \\
+    \hline
+    Ratio              & 0.0134              & 0.0089             \\
+    (0-cutoff/cutoff+) &                     &                    \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1.0\columnwidth]{./out/Sound_With_ReducedNoise.eps}
+  \caption{Sound With ReducedNoise}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1\columnwidth]{./out/Sound_Low_Noise.eps}
+  \caption{Sound Low Noise}
+\end{figure}
+\end{document}
