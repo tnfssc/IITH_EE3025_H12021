@@ -126,16 +126,19 @@ columns=fullflexible
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 
-Download all codes from here \newline
-\href{https://github.com/tnfssc/IITH_EE3025_H12021/tree/master/assignment-1}{GitHub/tnfssc} \newline
-And TeX codes from - \newline
-\href{https://github.com/tnfssc/IITH_EE3025_H12021/tree/master/assignment-1}{GitHub/tnfssc}
+Download all codes from here
+\begin{lstlisting}
+https://github.com/tnfssc/IITH_EE3025_H12021/tree/master/assignment-1
+\end{lstlisting}
+And TeX codes from here
+\begin{lstlisting}
+https://github.com/tnfssc/IITH_EE3025_H12021/tree/master/assignment-1
+\end{lstlisting}
 
 \section{\textbf{Problem}}
 
 Modify the following code given in problem 2.3 with different input parameters to get the best possible output.
 \begin{lstlisting}
-
 import soundfile as sf
 from scipy import signal
 
@@ -163,9 +166,6 @@ output_signal = signal.filtfilt(b, a, input_signal)
 
 #write the output signal into .wav file
 sf.write('Sound_With_ReducedNoise.wav', output_signal, fs)
-
-
-#
 \end{lstlisting}
 
 \section{\textbf{Solution}}
